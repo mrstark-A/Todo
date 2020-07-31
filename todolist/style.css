@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+  text-decoration-color: red;
+}
+body{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    /*background-image: url(' https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'); 
+   background-repeat: no-repeat;
+   background-size: cover;*/
+   color: rgb(192, 111, 111);/*all those we can adding is white in color */
+  /* font-family: 'Dancing Script', cursive;*/
+   font-family: 'Permanent Marker', cursive;
+   min-height: 100vh;
+}
+header{
+    font-size: 1.5rem;
+}
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,form button{
+    padding: 0.5rem;
+    border: none;
+    background-color: white;
+    font-size: 2rem;
+}
+form button{
+    background:white;
+    cursor: pointer;
+    color: tomato;
+    transition: all o.3s ease;
+}
+form button:hover{
+    background: tomato;
+    color: white;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+list-style: none;
+
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo li{
+    flex: 1;/* alingn all  button  to end*/ 
+}
+.complete-btn, .trash-btn{
+background: #ff6f47;
+color: white;
+border: none;
+padding: 1rem;
+font-size: 1rem;
+cursor: pointer;
+transition: all 0.5s ease;
+}
+.complete-btn{
+    background: rgb(84, 228, 84);
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+     transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
